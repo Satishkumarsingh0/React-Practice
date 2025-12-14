@@ -8,25 +8,30 @@ import GasPlanet from "./Pages/GasPlanet";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ErrorPage from "./Pages/ErrorPage";
 import NavBar from "./Pages/NavBar";
-import StateManagement from "./Pages/StateManagement";
-
+import Profile from "./Pages/StateManagement/Profile";
+import { createContext, useState } from "react";
+export const UserContext = createContext();
 function App() {
+  const [userName, setUserName] = useState("Satish");
+
   return (
-    <div className="App">
-      <Router>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/todolist" element={<ToDoList />} />
-          <Route path="/predictage" element={<PredictAgeApiCall />} />
-          <Route path="/catfact" element={<CatFactAPICall />} />
-          <Route path="/person" element={<Person />} />
-          <Route path="/gasplanet" element={<GasPlanet />} />
-          <Route path="/statemanagement" element={<StateManagement />} />
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-      </Router>
-    </div>
+    <UserContext.Provider value={{ userName, setUserName }}>
+      <div className="App">
+        <Router>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/todolist" element={<ToDoList />} />
+            <Route path="/predictage" element={<PredictAgeApiCall />} />
+            <Route path="/catfact" element={<CatFactAPICall />} />
+            <Route path="/person" element={<Person />} />
+            <Route path="/gasplanet" element={<GasPlanet />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+        </Router>
+      </div>
+    </UserContext.Provider>
   );
 }
 

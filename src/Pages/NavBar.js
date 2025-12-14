@@ -10,7 +10,7 @@ const NavBar = () => {
       <Link to={"/catfact"}>Cat Fact</Link>
       <Link to={"/person"}>Person</Link>
       <Link to={"/gasplanet"}>Gas Planet</Link>
-      <Link to={"/statemanagement"}>State Management</Link>
+      <Link to={"/profile"}>Profile</Link>
     </div>
   );
 };
