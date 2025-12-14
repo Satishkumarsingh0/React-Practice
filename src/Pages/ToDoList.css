@@ -1,0 +1,110 @@
+.addTask{
+    background-color: darkslategrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.addTask > h1{
+    color: whitesmoke;
+}
+.taskInput{
+    padding: 2px 4px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+    outline: none;
+    font-size: 24px;
+}
+
+button{
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: rgb(31, 54, 54);
+    font-weight: bold;
+    color: rgb(204, 211, 204);
+}
+button:hover{
+    cursor: pointer;
+}
+
+.addTaskButton{
+    padding: 4px 12px;
+    font-size: 20px;
+}
+.addTaskButton:hover{
+    background-color: rgb(25, 39, 39);
+}
+
+.noTaskText{
+    font-size: large;
+    color: white;
+}
+
+
+.list{
+    margin: 6px 0px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:darkslategrey;
+    padding: 6px;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px;
+    padding: 0px 8px;
+    width: 90%;
+    background-color:rgb(202, 204, 204);
+    border-radius: 4px;
+}
+
+.taskName{
+    padding: 0px 4px;
+    text-align: left;
+}
+
+.actions{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+.actionButton{
+    margin: 0px 6px;   
+}
+.deleteTaskButton{
+    background-color: rgb(180, 19, 19); 
+    color: whitesmoke;
+
+}
+.deleteTaskButton:hover {
+    background-color: rgb(121, 12, 12); 
+}
+.updateTaskButton{
+    background-color: darkslategrey; 
+    color: whitesmoke;
+}
+.updateTaskButton:hover {
+    background-color: rgb(32, 54, 54); 
+}
+.completeTaskButton{
+    background-color: rgb(22, 102, 36); 
+    color: whitesmoke;
+}
+.completeTaskButton:hover {
+    background-color: rgb(15, 68, 24);  
+}
+.completedTask{
+    background-color: rgb(15, 68, 24); 
+    color: whitesmoke; 
+}
