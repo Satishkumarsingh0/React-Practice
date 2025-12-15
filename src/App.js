@@ -10,6 +10,7 @@ import ErrorPage from "./Pages/ErrorPage";
 import NavBar from "./Pages/NavBar";
 import Profile from "./Pages/StateManagement/Profile";
 import { createContext, useState } from "react";
+
 export const UserContext = createContext();
 function App() {
   const [userName, setUserName] = useState("Satish");

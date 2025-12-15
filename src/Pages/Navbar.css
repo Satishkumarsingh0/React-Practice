@@ -1,0 +1,16 @@
+.navbar{
+    width: 100%;
+    height: clamp(20px, calc(20px + 1rem), 30px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: darkslategrey;
+}
+.link{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.link:hover{
+    border-bottom: 2px solid  tomato;
+}

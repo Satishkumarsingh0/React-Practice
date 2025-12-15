@@ -11,7 +11,9 @@ const ChangePofile = () => {
         id="newUserName"
         onChange={(e) => setNewUserName(e.target.value)}
       />
-      <button onClick={() => setUserName(newUserName)}>Change Username</button>
+      <button onClick={() => newUserName && setUserName(newUserName)}>
+        Change Username
+      </button>
     </div>
   );
 };
